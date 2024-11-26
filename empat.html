@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TNF</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* Set background color to white */
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #333; /* Dark background for the navbar */
+      padding: 10px 0; /* Padding for top and bottom */
+      position: fixed; /* Fix the navbar to the top */
+      width: 100%; /* Full width */
+      top: 0; /* Position at the top */
+      z-index: 1000; /* Ensure it stays above other content */
+    }
+
+    .nav-button {
+      color: white; /* White text color */
+      text-decoration: none; /* Remove underline */
+      padding: 14px 20px; /* Padding for buttons */
+      margin: 0 10px; /* Margin between buttons */
+      border-radius: 5px; /* Rounded corners */
+      transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .nav-button:hover {
+      background-color: #505050; /* Darker background on hover */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin-top: 60px; /* Space for the fixed navbar */
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      margin-bottom: 50px;
+      background-color: #ffffff; /* Profile background color */
+      padding: 20px;
+      border-radius: 10px; 
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      width: 300px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #000000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .button:hover {
+      background-color: #505050;
+    }
+
+    .footer {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 0.8em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#" class="nav-button">Home</a>
+    <a href="#" class="nav-button">Profile</a>
+    <a href="#" class="nav-button">Contact</a>
+  </div>
+  <div class="container">
+    <div class="profile">
+      <div class="profile-image">
+        <img src="Saya.jpeg" alt="Profile Image">
+      </div>
+      <div class="name">TONI NUR F</div>
+      <div class="description">Web Developer</div>
+      <div class="buttons">
+        <a href="#" class="button">SD</a>
+        <a href="#" class="button">SMP</a>
+        <a href="#" class="button">SMA</a>
+        <a href="#" class="button">S1</a>
+      </div>
+    </div>
+    <div class="footer">© 2024 TNF</div>
+  </div>
+</body>
+</html>
